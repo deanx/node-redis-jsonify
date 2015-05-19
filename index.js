@@ -1,6 +1,6 @@
 module.exports = RedisJSONify;
 
-RedisJSONify.blacklist = ["info"];
+RedisJSONify.blacklist = ["info","hgetall"];
 
 function RedisJSONify (redis) {
 	var lastArgType;
